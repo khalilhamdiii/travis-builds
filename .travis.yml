@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - 14
+cache:
+  npm: false
+
+before_install:
+  - npm install -g npm@6
+
+install:
+  - npm install -g travis-ci-cloudfront-invalidation
+
+script:
+  - sleep 1
